@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="compile.js"></script>	
+</head>
+<body class=latin>
+<script type="text/javascript" src="https://rawgithub.com/stacktracejs/stacktrace.js/master/stacktrace.js"></script>
+<input hidden selected type=radio name=font id="font-latin" oninput="document.body.classList='latin'">
+<input hidden type=radio name=font id="font-ffp" oninput="document.body.classList='ffp'">
+<input hidden type=radio name=font id="font-llm" oninput="document.body.classList='llm'">
+<input hidden type=radio name=font id="font-llm2" oninput="document.body.classList='llm2'">
+
+<div class="editorsuite">
+    <div class="verticalflex">
+    	<div><canvas width="200" height="200"></canvas></div>
+    	<div class="extras">
+    		<input hidden type=radio name=tab id="tab-files">
+    		<input hidden type=radio name=tab id="tab-settings">
+    		<nav>
+    			<ul>
+    				<li><label for=tab-files>sitelen en kalama</label></li>
+    				<li><label for=tab-settings>lipu nasin</label></li>
+    			</ul>
+    		</nav>
+    		<div data-tab="files">
+    			<p>
+	    			sina jo ala e lipu sitelen e lipu kalama.
+	    			<br>o pana e ona tawa ni la sina ken kepeken ona lon ilo toki sina.
+	    		</p>
+
+	    		<div class=files>
+	    			<article>
+		    			<img src="media/kili.png" />
+		    			<span class="filesize">156 B</span>
+		    			<span><textarea spellcheck="false" placeholder="filename">img</textarea><span class=extension>.png</span></span>
+		    			<span class="delete">🗑️</span>
+	    			</article>
+
+	    			<article>
+		    			<video controls src="media/moli.wav"></video>
+		    			<span class="filesize">31.6 KB</span>
+		    			<span><textarea spellcheck="false" placeholder="filename">moli</textarea><span class=extension>.wav</span></span>
+		    			<span class="delete">🗑️</span>
+	    			</article>
+
+
+	    			<article>
+		    			<video controls src="media/kalamamoku.wav"></video>
+		    			<span class="filesize">51.6 KB</span>
+		    			<span><textarea spellcheck="false" placeholder="filename">kalamamoku</textarea><span class=extension>.wav</span></span>
+		    			<span class="delete">🗑️</span>
+	    			</article>
+
+	    			<label for="input-file"><article>
+		    			<img src="media/plus.png" style="filter: invert(0.7)" />
+		    			<span>ijo sin</span>
+	    			</article></label>
+	    		</div>
+    			<input type="file" id="input-file" hidden multiple accept="image/*,audio/*">
+    		</div>
+    		<div data-tab="settings">
+				<div class="fontselect">sitelen li
+					<label for="font-latin" class='latin'>Lasin</label>
+					<label for="font-ffp" class='ffp'>sitelen [FAIRFAX]</label>
+					<label for="font-llm" class='llm'>linja lipamanka</label>
+					<label for="font-llm2" class='llm2'>linja lipamanka en nanpa</label>
+				</div>
+    		</div>
+    	</div>
+    </div>
+	<textarea class="code-input" id="codein" data-for="code-out" spellcheck="false" value="">nimilipu  te  akesi linja  to
+pokipitokiilo  oopen  la
+    sonaawen  te  mutekili  to  lisama  ala  la
+        mutekilipimutenanpawan  li  te  ala  to
+    antela 
+        mutekilipimutenanpawan  li  sonaawen  te  mutekili  to
+    pini
+    mutesike  li  ala
+    lekoali  li  kulupu    pini  
+    sikela  mutesike  li lilitawa  lukalukalukatuwan  la
+        lekoali  likulupukine  kulupu  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  ala  pini
+        mutesike  lipokikine  wan    
+    pini
+    sonapinasintawa  likulupue  ala   e  kulupu  wekawan  ala  pini  e    kulupu  ala  wan  pini  e  kulupu  wan  ala  pini  e  kulupu  ala  wekawan  pini     
+    lekoali  nanpa  lukaluka  nanpa  lukaluka  li  wan
+    lekoali  nanpa  lukaluka  nanpa  lukalukawan  li  wan
+    lekoali  nanpa  lukaluka  nanpa  lukalukatu  li  wan
+    lekoali  nanpa  lukaluka  nanpa  luka  li  luka
+
+    lonpokapilawaakesi   li   lukaluka
+    lonsewipilawaakesi   li   lukaluka 
+
+    lonpokapimonsiakesi   li   lukalukatu
+    lonsewipimonsiakesi   li   lukaluka 
+    nasintawa  li  wan
+    nasintawapitenpopini  li  nasintawa
+    akesilimokuekililontenpopoka  li  ala
+
+    mutekili  li  ala
+
+    musililon  li  wan
+
+    tenpotawa  li  mute
+    tenpotawatawasitelenakesi  lipokie  tenpotawa  tankipisi  lukaluka
+    tenpotawatawasitelenakesi  li  nanpapikipisiala  tenpotawatawasitelenakesi
+
+
+    ilotenpopitawaakesi  li  ala
+pini
+
+oopen
+
+pokipitokiilo  :sike  la
+    musililon  la
+        kule  tutu  lukatutu  tutu
+        leko  ala  ala  tuali  tuali
+        nena  te  sewi  to  la  nasintawapitenpopini  lisamaala  tu  la
+            nasintawa  li  tutu
+        pini
+        nena  te  anpa  to  la  nasintawapitenpopini  lisamaala  tutu  la
+            nasintawa  li  tu
+        pini
+        nena  te  pokaopen  to  la  nasintawapitenpopini  lisamaala  tuwan  la
+            nasintawa  li  wan
+        pini
+        nena  te  pokapini  to  la  nasintawapitenpopini  lisamaala  wan  la
+            nasintawa  li  tuwan
+        pini
+        ilotenpopitawaakesi  lisama  tenpotawa  la
+            nasintawapitenpopini  li  nasintawa
+            ilotenpopitawaakesi  li  ala
+            otawaeakesi
+        pini
+        ositeleneakesi
+        ilotenpopitawaakesi  lipokikine  wan
+    antela
+        kule   lukatutu  ala  ala
+        leko  ala  mutemutemutemutelukaluka  tuali  mute
+        kule  lukatutu  lukatutu  lukatutu
+        lonpokapitokimoli  lipokie  sulitawasitelen  te  sinamoli..sinawilemusisinlaolukae nenananpawan  to  pikulupu  wekawan  tankipisi  tu   e  wanali
+        sitelentoki  te  sinamoli..sinawilemusisinlaolukae nenananpawan  to  lonpokapitokimoli  wanalituwan
+        nena  te  nanpawan  to  la
+            oopen
+        pini
+    pini
+    kule  ala  tuwan  ala
+    leko  ala   ala  wan  tuali
+    leko  wanalimutemutemutemutelukalukalukatutu  ala  wan  tuali
+    leko  ala  wanalimutemutemutemutelukalukalukatutu  tuali  wan
+    leko  ala  ala  tuali  mute 
+    musililon  la
+        kule  lukatutu  lukatutu  lukatutu
+        mutekili tawasitelen  lipokie  te  mutekilili  to  e  nasintoki  mutekili 
+    antela
+        kule  lukatutu  lukatu  ala
+        mutekili tawasitelen  lipokie  te  mutekilipi suli nanpa wanli  to  e   mutekilipimutenanpawan
+    pini
+    sitelentoki  mutekilitawasitelen  luka  lukalukatuwan
+pini
+
+pokipitokiilo  otawaeakesi  la
+    akesilimokuekililontenpopoka  lisama  ala  la
+        nasintawapimonsiakesi  li  lekoali   nanpa  lonsewipimonsiakesi   nanpa  lonpokapimonsiakesi  
+        lekoali   nanpa  lonsewipimonsiakesi   nanpa  lonpokapimonsiakesi   li   ala
+        lonpokapimonsiakesi  lipokikine  sonapinasintawa  nanpa  nasintawapimonsiakesi  nanpa  ala
+        lonsewipimonsiakesi  lipokikine  sonapinasintawa  nanpa  nasintawapimonsiakesi  nanpa  wan
+    antela 
+        akesilimokuekililontenpopoka  li  ala
+        mutekili  lipokikine  wan
+        otawaekili
+    pini
+    lekoali  nanpa  lonsewipilawaakesi  nanpa  lonpokapilawaakesi  li  nasintawa
+    lonpokapilawaakesi  lipokikine  sonapinasintawa  nanpa  nasintawa  nanpa  ala
+    lonsewipilawaakesi  lipokikine  sonapinasintawa  nanpa  nasintawa  nanpa  wan
+     lonsewipilawaakesi  li lilitawa  ala  anu  lonsewipilawaakesi  lisulitawa  lukalukalukatu  anu  lonpokapilawaakesi  li lilitawa  ala  anu  lonpokapilawaakesi  lisulitawa  lukalukalukatutu  la
+        omoli
+     antela  lekoali   nanpa  lonsewipilawaakesi  nanpa  lonpokapilawaakesi   lisama  luka  la
+        akesilimokuekililontenpopoka  li  wan
+         lekoali  nanpa  lonsewipilawaakesi  nanpa  lonpokapilawaakesi  li  nasintawa
+     antela  lekoali   nanpa  lonsewipilawaakesi  nanpa  lonpokapilawaakesi  lisamaala  ala  la
+        omoli
+    antela
+         lekoali  nanpa  lonsewipilawaakesi  nanpa  lonpokapilawaakesi  li  nasintawa
+    pini
+pini
+
+pokipitokiilo  ositeleneakesi  la
+    kule  ala  ala   lukatutu
+    nanpasewisike  li  ala
+    sikela  nanpasewisike  li lilitawa  lukalukalukatuwan  la
+        nanpapokasike  li  ala
+        sikela  nanpapokasike  li lilitawa  mute  la
+            lonpokasitelen  lipokie  nanpapokasike  pikulupu  lukaluka
+             lonsewisitelen  lipokie  nanpasewisike  pikulupu  lukaluka  e  mute
+            lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  luka  la
+                sitelen  te  kili.png  to  lonpokasitelen  lonsewisitelen
+            antela  lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisamaala  ala  la
+                antetantenpo  li  lukaluka  toki:  kipisinilamilawa e kamasulitantenpoekamalilitantenpo
+                otawaalatawapokatantenpo  li  ala
+                nanpapokasike  lisama  lonpokapimonsiakesi  la  nanpasewisike  lisama  lonsewipimonsiakesi  la   akesilimokuekililontenpopoka  lisama  ala  la
+                    antetantenpo  lipokie  ilotenpopitawaakesi  tankipisi  tenpotawatawasitelenakesi  pikulupu  wekawan  e  lukaluka
+                    lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  tu  anu  lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  tuwan  la
+                        otawaalatawapokatantenpo  li  wan
+                    pini
+                pini
+                musililon  la
+                    nanpapokasike  lisama  lonpokapilawaakesi  la  nanpasewisike  lisama  lonsewipilawaakesi  la
+                        antetantenpo  lipokie  ilotenpopitawaakesi  tankipisi  tenpotawatawasitelenakesi
+                        lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  wan  anu  lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  tutu  la
+                            otawaalatawapokatantenpo  li  wan
+                        pini
+                    pini
+                pini
+                lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  wan  la
+                    lonsewisitelen  lipokikine  wan
+                    lonpokasitelen  lipokikine  wekatu  e  antetantenpo  pikulupu  otawaalatawapokatantenpo  pikulupu  wekawan  e  lukaluka  pikulupu  otawaalatawapokatantenpo
+                    leko  lonpokasitelen  lonsewisitelen  antetantenpo  lukatu
+                pini
+                lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  tu  la
+                    lonpokasitelen  lipokikine  wan
+                    lonsewisitelen  lipokikine  wan   e  antetantenpo  pikulupu  otawaalatawapokatantenpo  pikulupu  wekawan  e  lukaluka  pikulupu  otawaalatawapokatantenpo
+                    leko  lonpokasitelen  lonsewisitelen  lukatu  antetantenpo
+                pini
+                lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  tuwan  la
+                    lonsewisitelen  lipokikine  wan
+                    lonpokasitelen  lipokikine  wan  e  antetantenpo  pikulupu  otawaalatawapokatantenpo  pikulupu  wekawan  e  lukaluka  pikulupu  otawaalatawapokatantenpo
+                    leko  lonpokasitelen  lonsewisitelen  antetantenpo  lukatu
+                pini
+                lekoali  nanpa  nanpasewisike  nanpa   nanpapokasike  lisama  tutu  la
+                    lonpokasitelen  lipokikine  wan
+                    lonsewisitelen  lipokikine  wekatu   e  antetantenpo  pikulupu  otawaalatawapokatantenpo  pikulupu  wekawan  e  lukaluka  pikulupu  otawaalatawapokatantenpo
+                    leko  lonpokasitelen  lonsewisitelen  lukatu  antetantenpo
+                pini
+            pini
+            nanpapokasike  lipokikine  wan
+        pini
+        nanpasewisike  lipokikine  wan
+    pini
+pini
+
+pokipitokiilo  otawaekili  la
+    kalama  te  kalamamoku.wav  to
+    mapiakesiala  li  kulupu     pini  
+    nanpasewisike  li  ala
+    sikela  nanpasewisike  li lilitawa  lukalukalukatuwan  la
+        nanpapokasike  li  ala
+        sikela  nanpapokasike  li lilitawa  mute  la
+            lekoali  nanpa  nanpasewisike  nanpa  nanpapokasike  lisama  ala  la
+                mapiakesiala  likulupukine  kulupu  nanpasewisike   nanpapokasike   pini  
+            pini
+            nanpapokasike  lipokikine  wan
+        pini
+        nanpasewisike  lipokikine  wan
+    pini
+    lonkili   lipokie  nanpatannasa  pikulupu  suli  mapiakesiala
+    lonkili  li  nanpapikipisiala  lonkili
+    lonkili  li  mapiakesiala  nanpa  lonkili
+    lonkilipoka  li  lonkili  nanpa  wan
+    lonkilisewi  li  lonkili  nanpa  ala
+    lekoali  nanpa  lonkilisewi  nanpa  lonkilipoka  li  luka
+    nanpasewisike  lipokikine  wan
+pini
+
+pokipitokiilo  omoli  la
+    kalama  te  moli.wav  to
+    musililon  li   ala
+    mutekilimoli  li  mutekili
+    mutekilimolipimutenanpawan  li  mutekilipimutenanpawan
+    mutekili  lisulitawa  nasinnanpa  mutekilipimutenanpawan  la
+        mutekilipimutenanpawan  li  nasintoki  mutekili
+        sonaawensin  te  mutekili  to  mutekilipimutenanpawan
+    pini
+pini</textarea>
+	<code id="code-out"></code>
+</div>
+
+<style>
+	/* general styling */
+	html, body {
+		margin: 0;
+		overflow: hidden;
+	}
+
+	/* font selector stuff */
+	.fontselect {
+		background-color: black;
+		color: white;
+/*		font-family: sans-serif;*/
+		height: 1.5em;
+	}
+
+	@font-face {
+		font-family: sans-serif-numerals;
+		src: local(DejaVu Sans);
+		unicode-range: U+0030-39;
+
+	}
+
+	.ffp {
+		font-family: "fairfax pona";
+	}
+	.llm {
+		font-family: "linja lipamanka";
+	}
+	.llm2 {
+		font-family: sans-serif-numerals, "linja lipamanka";
+	}
+	.latin {
+		font-family: "sans-serif";
+	}
+	.fontselect label {
+		margin: 2em;
+	}
+	.fontselect label::before {
+		content: ' ';
+		height: 0.8em;
+		width: 0.8em;
+		display: inline-block;
+		background-color: white;
+		border-radius: 2em;
+		position: relative;
+		top: 0.05em;
+		right: 0.3em;
+	}
+	.ffp .fontselect .ffp::before, .latin .fontselect .latin::before, .llm .fontselect .llm::before, .llm2 .fontselect .llm2::before{
+		background-color: cyan;
+	}
+
+
+	/* play screen */
+	canvas {
+		background-color: #222;
+		width: 100%;
+  		height: 100%;
+  		object-fit: contain;
+  		image-rendering: pixelated;
+	}
+
+
+	/* editor suite */
+
+	.editorsuite {
+		position: relative;
+		height: 100vh;
+		display: flex;
+	}
+	.editorsuite > * {
+		flex: 1;
+	}
+
+	.verticalflex {
+		display: flex;
+		flex-direction: column;
+	}
+	.verticalflex > div {
+		flex: 1;
+		max-height: 50%;
+	}
+
+	/* extras  tabs */
+	.extras ul {
+		margin: 0;
+		padding: 0;
+	}
+	.extras nav li {
+		list-style: none;
+		display: inline;
+		margin: 0;
+		margin-left: 0.3em;
+	}
+	.extras nav label {
+		background: #666;
+		padding: 0.1em 0.3em;
+	}
+	.extras nav label:hover {
+		background: #888;
+		cursor: pointer;
+	}
+	.extras nav label:active {
+		background: #444;
+		cursor: pointer;
+	}
+
+	.extras {
+		background: black;
+		color: white;
+	}
+	.extras nav {
+		background: #000;
+		height: 1.75em;
+		position: relative;
+		border-bottom: solid 1px white;
+	}
+	.extras nav ul {
+		position: absolute;
+		bottom: 1px;
+		left: 0.3em;
+	}
+	#tab-files:checked ~ nav [for="tab-files"], #tab-settings:checked ~ nav [for="tab-settings"] {
+		border: solid 1px white;
+		border-bottom: solid 1px black;
+	}
+	#tab-files:checked ~ [data-tab="files"], #tab-settings:checked ~ [data-tab="settings"] {
+		display: block;
+	}
+	.extras [data-tab] {
+		display: none;
+		overflow: auto;
+		height: 100%;
+	}
+
+	/* file browser */
+	.files {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.files article {
+		border: solid 1px white;
+		min-width: 10em;
+		min-height: 10em;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		box-sizing: border-box;
+		position: relative;
+	}
+	.files article > :first-child {
+		width: 5em;
+		height: 5em;
+		margin: 0 auto 0.5em auto;
+	}
+	.files article img {
+		object-fit: contain;
+		width: 100%;
+		height: 100%
+	}
+
+	.files textarea {
+		height: 1em;
+		background: transparent;
+		color: inherit;
+		border: none;
+		font-family: inherit;
+		font-size: inherit;
+		display: inline;
+		width: 5em;
+		min-width: 2ch;
+		max-width: 25em;
+		white-space: pre-wrap;
+		resize: none;
+		overflow-wrap: anywhere;
+
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+
+	.files .delete {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #444;
+		display: none;
+		padding: 0.2em;
+		border-bottom-left-radius: 5px;
+	}
+	.files article:hover .delete {
+		display: block;
+	}
+	.files .delete:hover {
+		background-color: #666;
+		cursor: pointer;
+	}
+	.files .delete:active {
+		background-color: #a22;
+		top: 1px;
+	}
+
+	.files article:hover {
+		background: #222;
+	}
+	.files article:last-child:hover {
+		background: #444;
+		cursor: pointer;
+	}
+	.files article:last-child:active {
+		background: #222;
+	}
+
+	.extension {
+		text-transform: uppercase;
+	}
+
+
+	/* code editor */
+	.editorsuite > textarea {
+		background-color: black;
+		display: block;
+		color: transparent;
+		caret-color: white;
+	}
+
+
+	.editorsuite > textarea, code {
+		height: 100%;
+		font-size: 1.5rem;
+		font-family: sans-serif;
+		box-sizing: border-box;
+		overflow: auto;
+		white-space: pre-wrap;
+		font-family: inherit;
+	}
+	code {
+		color: white;
+		position: absolute;
+		top: 1px;
+		right: 4px;
+		display: block;
+		border: solid 2px transparent;
+		width: 50%;
+		padding: 2px;
+		pointer-events: none;
+	}
+
+	.keyword {
+		color: grey;
+	}
+	.string {
+		color: lime;
+	}
+	.nanpa {
+		color: cyan;
+	}
+	.function {
+		color: pink;
+	}
+	.editorsuite > code span:not(.keyword,.string,.nanpa) {
+		text-decoration: solid 1px white underline;
+	}
+
+	.editorsuite > code span[data-error] {
+		text-decoration: solid 1px red underline;
+	}
+</style>
+
+<script>
+	[...document.querySelectorAll('input:checked')].forEach(inp=>{if(inp.oninput)inp.oninput()})
+</script>
+<script type="text/javascript">
+
+	const path$ = "file://"+document.location.pathname.split('/').slice(0,-1).join('/')+'/media/'
+	const files$ = {
+		[path$+"kili.png"]: ["kili", "png", null],
+		[path$+"moli.wav"]: ["moli", "wav", null],
+		[path$+"kalamamoku.wav"]: ["kalamamoku", "wav", null]
+	}
+	;[...document.querySelectorAll('.files article')].slice(0,-1).forEach(makeFileInteractive)
+
+	function makeFileInteractive(article) {
+		const url = article.firstElementChild.src
+		const extension = files$[url][1]
+
+		let textarea = article.querySelector('textarea')
+		textarea.addEventListener('input', resizeThenChange)
+
+		function resize() {
+			textarea.style.whiteSpace = 'pre'
+			textarea.value = textarea.value.replaceAll("\n","").replaceAll("/","-")
+			textarea.style.width = '0'
+			textarea.style.height = '0'
+			textarea.style.width = (textarea.scrollWidth+2) + 'px'
+			textarea.style.whiteSpace = 'pre-wrap'
+			textarea.style.height = textarea.scrollHeight + 'px'
+		}
+		resize()
+
+		var timeout
+		function resizeThenChange() {
+			resize()
+			clearTimeout(timeout)
+			timeout = setTimeout(changename, 500)
+		}
+
+		function changename() {
+			files$[url][0] = textarea.value
+			let newVal = ensureFilenameUnique(...files$[url])
+			if (newVal != textarea.value) {
+				files$[url][0] = textarea.value = newVal
+				resize()
+				sprites$ = []
+				sounds$ = []
+			}
+		}
+		changename()
+
+		let deletebutton = article.querySelector('.delete')
+		deletebutton.addEventListener('click', remove)
+		function remove() {
+			clearTimeout(timeout)
+			textarea.removeEventListener('input', resize)
+			textarea.removeEventListener('change', changename)
+			deletebutton.removeEventListener('click', remove)
+			article.remove()
+			delete files$[url]
+		}
+	}
+
+	var fileListHtml = document.querySelector('.files')
+	var fileAddHtml = fileListHtml.lastElementChild
+	document.getElementById('input-file').addEventListener('input', e=>{
+		var inp = e.target
+		Array.prototype.forEach.call(inp.files, file=>{
+			var url = URL.createObjectURL(file)
+			var filename = file.name.split('.')
+			var extension = filename.pop()
+			filename = ensureFilenameUnique(filename.join('.'), extension)
+			files$[url] = [filename, extension, file]
+			var article = document.createElement('article')
+			article.innerHTML = `${isImage(extension)?`<img src="${url}" />`:`<video controls src="${url}"></video>`}
+				<span class="filesize">${humanReadablyByteCount(file.size)}</span>
+				<span><textarea spellcheck="false" placeholder="filename">${filename}</textarea><span class=extension>.${extension}</span></span>
+				<span class="delete">🗑️</span>`
+
+			 fileListHtml.insertBefore(article, fileAddHtml)
+			 makeFileInteractive(article)
+		})
+	})
+
+	function isImage(filetype) {
+		return ['png', 'jpg', 'jpeg', 'svg', 'bmp', 'gif', 'webp', 'webm', 'apng', 'avif', 'jfif', 'pjpeg', 'pjp', 'ico', 'cur', 'tif', 'tiff'].includes(filetype)
+	}
+	function intToNanpaPona(n) {
+		out = []
+		if (n==0) return "ala"
+		while (n >= 100) { out.push("ale"); n -= 100 }
+		while (n >= 20) { out.push("mute"); n -= 20 }
+		while (n >= 5) { out.push("luka"); n -= 5 }
+		while (n >= 2) { out.push("tu"); n -= 2 }
+		while (n >= 1) { out.push("wan"); n -= 1 }
+		return out.join(' ')
+	}
+	function nanpaPonaToInt(toki) {
+		toki = toki.replaceAll(" ", "")
+		if (toki == "ala") return 0
+		n = 0
+		while (toki.startsWith("ale")) { toki=toki.slice(3); n += 100 }
+		while (toki.startsWith("mute")) { toki=toki.slice(4); n += 20 }
+		while (toki.startsWith("luka")) { toki=toki.slice(4); n += 5 }
+		while (toki.startsWith("tu")) { toki=toki.slice(2); n += 2 }
+		while (toki.startsWith("wan")) { toki=toki.slice(3); n += 1 }
+		if (toki != '') return -1
+		return n
+	}
+	function ensureFilenameUnique(name, extension, file){
+		var filenames = new Set(Object.values(files$).filter(x=>x[1]==extension && x[2]!=file).map(x=>x[0]))
+		if (!filenames.has(name)) return name
+		
+		// extract current ending "sitelen kili nanpa tu" -> base_name="sitelen kili" number=2
+		var base_name = name.split('nanpa')
+		let number_tp = base_name.pop()
+		var number = nanpaPonaToInt(number_tp)
+		if (number == -1) {
+			number = 1
+			base_name.push(number_tp)
+		}
+		base_name = base_name.join('nanpa')
+
+		while (filenames.has(name)) name = `${base_name} nanpa ${intToNanpaPona(++number)}`;
+		return name
+		
+	}
+
+	function humanReadablyByteCount(n) {
+		if (n < 1000) return `${n}B`
+		const prefix = "kMGTPEZYRQ"
+		n /= 1000
+		let i = 0;
+		while (n >= 1000) { n/= 1000; i++ }
+		if (i>prefix.length) {
+			n*= (1000)*(i-prefix.length)
+			i = prefix.length
+		}
+
+		if (n > 100) return `${Math.round(n)} ${prefix[i]}B`
+		if (n > 10) return `${n.toFixed(1)} ${prefix[i]}B`
+		return `${n.toFixed(2)} ${prefix[i]}B`
+	}
+
+	const KEYWORDS = ["tokipiwekaala", "pikulupu", "lilon", "tankipisi", "weka", "nanpasemepikulupuona", "sonaawen", "sonaawensin", "nanpatannasa", "suli", "pana", "nanpasulipikipisiala", "nanpalilipikipisiala", "nanpapikipisiala", "antela", "nasinnanpa", "nimilipu", "nanpa", "sitelentoki", "li", "lipokie", "lipokikine", "likulupue", "likulupukine", "sikela", "pokipitokiilo", "la", "pini", "anu", "lililitawa", "lisulitawa", "lisama", "lisamaala", "te", "to", "kulupu", "e", "kule", "leko"]
+	const KEYWORD_REGEX = new RegExp(KEYWORDS.map(a=>`\\b${a}\\b`).join('|'), 'g')
+	function highlight(text) {
+		// sanitise
+		text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;") + '\n'
+		
+		var functions = Object.fromEntries(text.split(`\n`).map(x=>x.trim().split(`  `).map(y=>y.replaceAll(" ", ''))).filter(([x])=>x=="pokipitokiilo").map(([_,x,...y])=>[x, y.slice(0,-1)]))
+		//console.log(functions)
+
+		var output = ""
+		var current_token = '';
+		var current_classlist = '';
+		var errors = '';
+		var in_a_string = false;
+		var string_stack = []
+		for (let i = 0; i < text.length; i++) {
+			if ((text[i] == ' ' && current_token.endsWith(' ')) || text[i] == '\n') {
+				let seperator
+				if (text[i] == ' ') {
+					current_token = current_token.slice(0, -1)
+					seperator = '  '
+				} else { seperator = '\n' }
+
+				if (in_a_string || current_token == 'te') {
+					string_stack.push(current_token)
+					if (current_token == 'te') {
+						in_a_string = true
+					}
+					if (current_token == "to") {
+						output += `<span class="string" data-error="${errors}">${string_stack.join('  ')}</span>${errors?`<span data-error="${errors}">${seperator}</span>`:seperator}`
+						in_a_string = false
+						string_stack = []
+					}
+					else if (seperator == '\n') {
+						errors += "te with no matching to.\n"
+						output += `<span class="string" data-error="${errors}">${string_stack.join('  ')}</span>${errors?`<span data-error="${errors}">${seperator}</span>`:seperator}`
+						in_a_string = false
+						string_stack = []
+						errors = ""
+					}
+					current_token = ""
+					continue
+				}
+
+				let normalised_token = current_token.replace(/ /g, '')
+				if (is_valid_number(normalised_token)) {
+					current_classlist += 'nanpa'
+				}
+
+				if (KEYWORDS.includes(normalised_token)) {
+					current_classlist += 'keyword'
+				}
+				if (current_token == "to") {
+					errors += "to with no matching to.\n"
+				}
+
+				if (normalised_token in functions) {
+					current_classlist += 'function'
+				}
+
+				output += `<span class="${current_classlist}" data-error="${errors}">${current_token}</span>${errors?`<span data-error="${errors}">${seperator}</span>`:seperator}`
+				current_token = ""
+				current_classlist = ''
+				if (seperator == '\n') errors = "";
+			} else {
+				current_token += text[i]
+			}
+		}
+
+		return output.replace(/data-error="">/g, ">")
+	}
+
+	const NAMPA_REGEX = /^(weka)?(wan|tu|luka|mute|ale|ala)+$/
+	function is_valid_number(text) {
+		return NAMPA_REGEX.test(text)
+	}
+
+	var __LOOP__$ = 0
+	var __CANVAS__$ = document.querySelector('canvas');
+	[...document.querySelectorAll('.code-input')].forEach(inp=>{
+		var out = document.getElementById(inp.dataset.for)
+		console.log(inp, out)
+		function parse() {
+			out.innerHTML = highlight(inp.value)
+			try {
+				compiled = compile(inp.value)
+				let f = Function(compiled)
+				__CANVAS__$.getContext('2d').fillStyle = 'white'
+				__CANVAS__$.getContext('2d').fillRect(0, 0, 200, 200)
+				clearInterval(__LOOP__$)
+				f()
+			} catch (e) {
+				// report it somewhere.. somehow
+				console.warn(e)
+			}
+		}
+		inp.addEventListener('input', parse)
+		inp.addEventListener('scroll', e=>{
+			out.scrollLeft = inp.scrollLeft
+			out.scrollTop = inp.scrollTop
+		})
+		parse()
+		out.innerHTML = highlight(inp.value)
+
+	});
+</script>
+
+</body>
+</html>
